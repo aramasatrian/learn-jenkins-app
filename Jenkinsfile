@@ -12,8 +12,10 @@ pipeline {
 
                 steps {
                     sh '''
-                        ls -la
-                        node -v
+                        ls -l
+                        npm ci 
+                        npm run build
+                        ls -l
                     '''
                 }
         }
