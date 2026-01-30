@@ -12,10 +12,7 @@ pipeline {
 
                 steps {
                     sh '''
-                        ls -l
                         npm ci 
-                        npm run build
-                        ls -l
                     '''
                 }
         }
@@ -30,7 +27,6 @@ pipeline {
 
             steps {
                 sh '''
-                ls -l
                 npm rest
                 ls -l
                 '''
