@@ -27,7 +27,7 @@ pipeline {
 
             steps {
                 sh '''
-                npm rest
+                npm test
                 ls -l
                 '''
             }
