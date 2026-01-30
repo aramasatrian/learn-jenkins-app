@@ -8,6 +8,7 @@ pipeline {
                     image 'node:18-alpine'
                     reuseNode true
                 }
+            }
 
                 steps {
                     sh '''
@@ -15,7 +16,6 @@ pipeline {
                         node -v
                     '''
                 }
-            }
         }
     }
 }
